@@ -1,0 +1,48 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/tech.jpg"); /* Path to your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.overlay-container {
+  position: relative;
+  z-index: 1;
+}
+
+.skewed-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(1%, -191%) skewX(-155deg) rotate(-23deg);
+  background: linear-gradient(to right, #00dfd8, #007cf0);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  z-index: 2;
+  animation: zoomText 6s infinite;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@keyframes zoomText {
+  0% {
+    transform: translate(12%, -191%) skewX(-155deg) rotate(-23deg) scale(1);
+  }
+  50% {
+    transform: translate(1%, -191%) skewX(-155deg) rotate(-23deg) scale(1.5);
+  }
+  100% {
+    transform: translate(-63%, -50%) skewX(37deg) rotate(45deg) scale(1);
+  }
+}

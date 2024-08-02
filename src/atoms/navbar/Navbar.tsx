@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {
   HomeOutlined,
   UserOutlined,
-  VideoCameraOutlined,
+  // VideoCameraOutlined,
   ShoppingOutlined,
 } from "@ant-design/icons";
 // import "antd/dist/antd.css";

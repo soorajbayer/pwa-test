@@ -10,7 +10,7 @@ import {
 // import MovieList from "./components/MoviesList";
 // import Products from "./components/Products";
 import Users from "./molecules/users/Users";
-import Navbar from "./atoms/navbar/Navbar";
+// import Navbar from "./atoms/navbar/Navbar";
 import Products from "./molecules/products/Products";
 import Home from "./molecules/home/Home";
 
